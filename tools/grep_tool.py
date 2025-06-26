@@ -4,10 +4,9 @@ import os
 from pathlib import Path
 from typing import Callable, List, Optional
 
-from patched_adk.config import find_text_char_limit
 
 from .logger import logger
-
+find_text_char_limit=1000
 # Common directories and files to skip
 BLACKLIST_PATTERNS = [
     ".git/*",

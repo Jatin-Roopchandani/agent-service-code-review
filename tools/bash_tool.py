@@ -3,11 +3,10 @@ import subprocess
 from textwrap import indent
 from typing import Awaitable, Callable, List, Optional, Any, Coroutine
 
-from patched_adk.config import truncate_str
 
 from .logger import logger
 
-
+truncate_str = "<truncated>"
 def create_runtime_cli_tool(command: str, truncate_length: Optional[int] ):
     func_name = f"{command}_cli"
     func_docstring = f"""
