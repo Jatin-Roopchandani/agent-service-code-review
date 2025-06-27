@@ -1,16 +1,12 @@
 [project]
-name = "test-agent"
+name = "code-review-agent"
 version = "0.1.0"
-description = "Add your description here"
+description = "Automated GitHub PR code review agent using Google ADK"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "eml-parser>=2.0.0",
     "google-adk>=1.0.0",
     "litellm>=1.68.0",
-    "psycopg[binary]>=3.2.9",
-    "python-magic>=0.4.27",
-    "sqlalchemy>=2.0.40",
 ]
 
 
